@@ -1,0 +1,252 @@
+/* Pink Nav Bar */
+.dm1{
+    background-color: #bbbbbb;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.d1h1{
+    color: black;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS';
+    word-spacing: 2px;
+}
+
+/* Main Nav Bar */
+.enav{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.n1{
+    left: 0;
+    background-color: #a1eb7f;
+    height: 135px;
+    width: 100%;
+    text-align: center;
+    word-spacing: 18px;
+}
+.n1 ul li{
+    display: inline-block;
+}
+.n1 ul li a{
+    color: rgb(53, 53, 53);
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    word-spacing: 1px;
+    transition: 0.5s;
+}
+.n1 ul li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: #fff;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 858px){
+    .n1i{
+        margin-top: 0px;
+        width: 170px;
+        margin-left: 15px;
+    }
+    .n1{
+        height: 90px;
+        text-align: left;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .n1 ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #a1eb7f;
+        top: 116px;
+        left: -100%;
+        text-align: center;
+        line-height: 100px;
+        transition: all .5s;
+    }
+    .n1 ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .n1 ul li a{
+        font-size: 22px;
+        font-weight: 550;
+        margin-right: 50px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width: 858px){
+    .n2 div h2{
+        font-size: 50px;
+    }
+}
+
+/* Page */
+s{
+    color: rgb(241, 46, 46);
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  height: 105vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: white;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_image img{
+  width: 100%;
+}
+
+.option img {
+  width: 110px;
+  padding: 10px;
+}
+
+.right {
+  padding: 50px 100px 50px 50px;
+}
+
+.rh3 {
+  color: #000000;
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+  font-family: "Cabin", sans-serif;
+}
+
+.rh5,
+.rp {
+  color: #000000;
+  font-family: "Cabin", sans-serif;
+}
+
+.rh4 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+}
+
+.rp {
+  margin: 20px 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+}
+
+.rh5 {
+  font-size: 18px;
+  font-family: "Cabin", sans-serif;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: white;
+  margin-top: 20%;
+  border-radius: 30px;
+  font-family: "Cabin", sans-serif;
+  transition: 1s;
+}
+button:hover{
+  background-color: #a1eb7f;
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+}
+button a:hover{
+  color: #fff;
+}
+
+.sosh{
+  margin-top: 0;
+  font-size: 30px;
+  font-family: "Cabin", sans-serif;
+  line-height: 0px;
+}
+.sosh a{
+  margin-top: 0;
+  color: #0c6800;
+  transition: 0.5s;
+}
+.sosh a:hover{
+  color: #000000;
+}
+
+@media only screen and (max-width:768px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .option img {
+  width: 110px;
+  padding: 10px;
+}
+}
+
+@media only screen and (max-width:511px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .left, .right {
+    padding: 0;
+  }
+
+  .simg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
